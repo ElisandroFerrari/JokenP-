@@ -10,8 +10,9 @@ O projeto foi construído utilizando as seguintes tecnologias:<br>
 
 Demonstração
 <br>
-O projeto conta com uma interface personalizada utilizando uma moldura clássica e efeitos de transparência em RGBA.
-
+O projeto conta com uma interface personalizada utilizando uma moldura clássica e efeitos de transparência em RGBA. <br> <br>
+acesse o link : https://jokenpo-efcode.netlify.app/
+<br><br>
 Desktop
 <br>
 
