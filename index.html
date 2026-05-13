@@ -5,32 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Diplomata&display=swap" rel="stylesheet">
     <title>< EFcode / >©™ JokenPô</title>
 </head>
 <body>
 
     <div class="container">
-
         <h1>JokenPô</h1>
 
-        <button id="rock" onclick="playHuman('rock')">&#x1F44A;</button>
-        <button id="paper" onclick="playHuman('paper')">&#x1F590;</button>
-        <button id="scissors" onclick="playHuman('scissors ')">&#x270C;</button>
+        <div class="buttons-container">
+            <button id="rock" onclick="playHuman('rock')"><img src="./assets/pedra.png" class="img-icon"></button>
+            <button id="paper" onclick="playHuman('paper')"><img src="https://img.icons8.com/emoji/48/000000/raised-hand-emoji.png" class="img-icon"></button>
+            <button id="scissors" onclick="playHuman('scissors')"><img src="https://img.icons8.com/emoji/48/000000/victory-hand-emoji.png" class="img-icon"></button>
+            <button id="lizard" onclick="playHuman('lizard')"><img src="https://img.icons8.com/emoji/48/000000/lizard-emoji.png" class="img-icon"></button>
+            <button id="spock" onclick="playHuman('spock')"><img src="https://img.icons8.com/emoji/48/000000/vulcan-salute-emoji.png" class="img-icon"></button>
+        </div>
         
         <p class="your-score">Sua pontuação: <span id="human-score">0</span></p>
-        <p class="cpu-score">Pontuação da CPU: <span id="machine-score">0</span></p> <br>
+        <p class="cpu-score">Pontuação da CPU: <span id="machine-score">0</span></p>
         <p class="results"></p>
 
+        <!-- Arena VS -->
+        <div id="vs-arena" class="vs-container">
+            <div class="player-choice">
+                <p>Você</p>
+                <div id="player-display" class="vs-card"></div>
+            </div>
+            <div class="vs-symbol">VS</div>
+            <div class="machine-choice">
+                <p>CPU</p>
+                <div id="machine-display" class="vs-card"></div>
+            </div>
+        </div>
     </div>
 
     <footer>
         <p> By &lt;EFcode /&gt;&copy;&trade; </p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-<html>
+</html>
